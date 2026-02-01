@@ -1,0 +1,110 @@
+body {
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(115deg, #36d1c4 15%, #48c6ef 55%, #43e97b 100%);
+  min-height: 100vh;
+  color: #142332;
+  overflow-x: hidden;
+}
+.hero {
+  padding: 45px 11vw 20px 11vw;
+  min-height: 77vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff95 55%, #48c6ef10 100%);
+}
+.logo-halo {
+  width: 100px; height: 100px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 53%, #fff 52%, #48c6ef15 100%);
+  box-shadow: 0 0 44px #36d1c475, 0 0 0 12px #43e97b33;
+  display: flex; justify-content: center; align-items: center;
+  margin: 0 auto 17px auto;
+}
+.logo-halo img, .footer-logo img { width: 62px; height: 62px; object-fit: cover; border-radius: 50%; }
+.hero-title {
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  font-weight: 900; font-size: 2.2rem; color: #16655a; letter-spacing: 1px; margin: 0 0 13px 0;
+}
+.hero-sub {
+  color: #179179;
+  font-size: 1.14rem;
+  font-weight: 500;
+  margin: 0 auto 25px auto;
+  max-width: 420px;
+}
+.green { color: #43e97b; font-weight: bold;}
+.main-action {
+  background: linear-gradient(90deg, #36d1c4, #43e97b 100%);
+  color: #fff; font-weight: 700;
+  font-size: 1.13rem;
+  padding: 14px 40px; border-radius: 32px;
+  text-decoration: none; border: none; margin-top: 14px;
+  box-shadow: 0 5px 24px #48c6ef28, 0 3px 18px #43e97b28;
+  transition: background 0.17s, box-shadow 0.16s, transform 0.15s;
+  cursor: pointer;
+}
+.main-action:hover {background:linear-gradient(90deg, #43e97b 30%, #36d1c4 100%)}
+
+.section {background:rgba(255,255,255,0.92);border-radius:30px;box-shadow:0 3px 14px #36d1c41c;padding:30px 7vw 20px 7vw;max-width:650px;margin:24px auto;}
+.section-glass {backdrop-filter: blur(11px);}
+.section h2 {font-size: 1.13rem; color:#14747c; font-weight: 700; margin-bottom: 13px;}
+
+.learnings .card {
+  display:inline-block; min-width:160px; background:#43e97b0E; color:#16655a; font-weight: 700;
+  border-radius:14px;margin: 9px 7px 7px 0; padding:17px 16px;
+  box-shadow:0 2px 12px #36d1c41a; font-size:1.03rem;
+  transition:transform .18s; cursor:default;
+}
+.learnings .card:hover {transform:scale(1.05);}
+.learning-cards {display:flex; flex-wrap:wrap; gap:8px; justify-content:center;margin-top:14px;}
+@media (max-width: 650px) {
+  .learning-cards{flex-direction:column;align-items:stretch;}
+  .learnings .card{margin-right:0;min-width:0;}
+}
+
+.testimonials {max-width:520px;}
+.testimonial {background: #48c6ef0E; border-radius: 16px; margin: 13px 0; padding: 13px 16px;}
+.testimonial span {color:#43e97b;}
+.testimonial p {font-style: italic; color: #175752; font-weight:500; margin-bottom:0;}
+
+.paiement {max-width:480px;}
+.mvola-box { background: #fff; border-radius:20px; box-shadow:0 3px 21px #36d1c41c;
+  padding:28px 14px; text-align:center; margin:auto;}
+.mvola-logo {width:48px;height:48px;margin-bottom:8px;}
+.mvola-num {font-size:1.14rem;font-weight:700;margin:9px 0;}
+#mvolaNumber {color:#43e97b;font-size:1.09em;}
+#mvolaNumber.copied {text-shadow:0 0 8px #43e97baa;}
+#copyBtn{border:none;color:#16b980;background:none;cursor:pointer;font-size:1.3em;vertical-align:middle;margin-left:5px;}
+#copyBtn:active{color:#43e97b;}
+#copyMsg {color:#43e97b;font-weight:700;height:22px;margin-bottom:7px;}
+.mvola-amount {color:#16655a;font-size:1.07rem;margin-bottom:8px;}
+.steps {text-align:left;max-width:330px; margin:15px auto 12px auto;}
+.steps li {margin-bottom:8px;}
+#aideBtn {background:#e9fbf8;color:#33be98;font-size:1.05em;border-radius:17px;border:none;padding:8px 23px;margin-top:10px;}
+#aideBtn:hover {background:#43e97b22}
+
+footer {margin-top:36px; padding:18px 0 24px 0; text-align:center; background:linear-gradient(90deg,#e5f9ee 50%,#fff 100%);}
+.footer-logo img{width:37px;height:37px;}
+@media (max-width:700px){.section{border-radius:16px;padding:16px 2vw 15px 2vw;}}
+.mvola-logo-glow img.mvola-img-small {
+  width: 44px !important;
+  height: 44px !important;
+  max-width: 44px;
+  max-height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 8px #43e97b33;
+  margin-bottom: 0;
+}
+
+.footer-logo-small img.footer-img-small {
+  width: 33px !important;
+  height: 33px !important;
+  max-width: 33px;
+  max-height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 1px 8px #36d1c415;
+  margin-bottom: 0;
+}
